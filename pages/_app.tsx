@@ -92,6 +92,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <a
               href="https://github.com/Nouhack/AkramCSS"
               target="_blank"
+              rel="noreferrer"
               className="cursor-pointer"
             >
               <FaGithubAlt
