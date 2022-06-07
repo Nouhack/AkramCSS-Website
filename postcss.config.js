@@ -1,7 +1,11 @@
 module.exports = {
   plugins: [
     require("@fullhuman/postcss-purgecss")({
-      content: ["build/index.html", "build/static/js/*.js"],
+      //keyframes: true,
+      content: [
+        "./pages/**/*.{js,jsx,ts,tsx}",
+        "./components/**/*.{js,jsx,ts,tsx}",
+      ],
       defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
     }),
   ],

@@ -20,7 +20,7 @@ export default function UtilityTable({ items }: Props) {
       </div>
 
       {items.map((item: any, index: any) => (
-        <div>
+        <div key={index}>
           <div className="display-flex  justifyC-between justifyC-left flex-row">
             <div className="w-50-100">
               <p className="font-normal text-inner ">{item.class}</p>

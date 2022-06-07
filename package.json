@@ -4,18 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run build:prod-css",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:prod-css": "postcss build/static/css/*.css --replace build/static/css/*.css"
+    "build:prod-css": "postcss .next/static/css/*.css -r .next/static/css/*.css --no-map"
   },
   "dependencies": {
     "@badrap/bar-of-progress": "^0.2.1",
     "@docsearch/react": "^3.1.0",
-    "@mdx-js/loader": "^2.1.1",
-    "@next/mdx": "^12.1.6",
     "@nouhsa/akramcss": "^1.0.46",
-    "next": "12.1.6",
+    "next": "^12.1.7-canary.31",
     "react": "18.1.0",
     "react-code-blocks": "^0.0.9-0",
     "react-dom": "18.1.0",
