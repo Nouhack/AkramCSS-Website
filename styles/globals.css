@@ -1,16 +1,22 @@
-html,
+@import "../node_modules/@nouhsa/akramcss/css/akramcss.min.css";
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.page {
+  height: calc(100vh - 4rem);
+}
+.specialScroll::-webkit-scrollbar {
+  width: 5px;
 }
 
-* {
-  box-sizing: border-box;
+.specialScroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.specialScroll::-webkit-scrollbar-thumb {
+  background-color: #0688ac;
+  outline: 1px solid slategrey;
 }
