@@ -194,7 +194,7 @@ $colorPalette: map.merge(
           <p className="font-semibold bg-senary p-1">
             {" "}
             because if you add value before altering another in the same
-            variable file you'll get an error when compiling in scss{" "}
+            variable file you&apos;ll get an error when compiling in scss{" "}
           </p>
           <Introduction
             id="compiling"

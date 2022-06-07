@@ -20,9 +20,9 @@ const Home: NextPage = () => {
         </p>
         <p className="text-md lh-normal text-inner opacity-80 font-medium">
           AkramCSS is a utility Css Library that aims to reduce the touch of css
-          , that's the meaning of LCT (less css touch) file , the Library has
-          been built using only css generated from sass where you can find all
-          css power and more customised classes.
+          , that&apos;s the meaning of LCT (less css touch) file , the Library
+          has been built using only css generated from sass where you can find
+          all css power and more customised classes.
         </p>
 
         <Introduction

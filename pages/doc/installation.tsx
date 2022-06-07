@@ -27,8 +27,8 @@ const Installation: NextPage = () => {
         <div className="w-100-100 pb-3 md:px-1">
           <p className="text-4xl font-bold ls-tighter">Installation</p>
           <p className="text-lg lh-normal text-inner font-medium opacity-80">
-            We assume you have already installed nodejs and npm , if you haven't
-            installed it yet please do it before you continue.
+            We assume you have already installed nodejs and npm , if you
+            haven&apos;t installed it yet please do it before you continue.
           </p>
 
           <Introduction
