@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run build:build:prod-css",
+    "build": "next build && npm run build:prod-css",
     "start": "next start",
     "lint": "next lint",
     "build:prod-css": "postcss build/static/css/*.css --replace build/static/css/*.css"
