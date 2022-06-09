@@ -20,9 +20,13 @@ export default function index({}: Props) {
       </p>
       <Link href="/doc">
         <button className="cursor-pointer bg-akram text-base hover:bg-senary hover:text-base font-bold text-inner p-1.5 transition-color ease duration-slow rounded-lg">
-          Getting started{" "}
+          Getting started
         </button>
       </Link>
     </div>
   );
 }
+/*
+
+
+*/

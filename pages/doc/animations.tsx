@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import UtilityDoc from "../../Components/subComponents/UtilityDoc";
 import ReferencesSideBar from "../../Components/ReferencesSideBar";
-import { animations } from "../../data/utility";
+import AnimationsPage from "../../pages-data/animations";
 
 type Props = {};
 
@@ -23,19 +22,7 @@ export default function Animations({}: Props) {
           <p id="nouhack" className="text-4xl font-bold ls-tighter">
             Animations
           </p>
-
-          <UtilityDoc
-            special={true}
-            id="animations"
-            mainTitle="bounce / flash"
-            mainDescription="The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state."
-            items={animations}
-            usage={`{ bounce | flash }`}
-            code={`<div class="bg-akram w-100-100">
-            <button class="bounce">FIRST</button>
-            <button class="flash">SECODN</button>
-</div>`}
-          />
+          <AnimationsPage />
         </div>
         <ReferencesSideBar items={test} />
       </div>

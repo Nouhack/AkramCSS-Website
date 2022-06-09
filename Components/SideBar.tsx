@@ -111,7 +111,7 @@ export default function SideBar({}: Props) {
     },
   ];
   return (
-    <div className="bg-base min-w-16  max-h-full overflow-auto display-none md:display-block ">
+    <div className="bg-base min-w-16  max-h-full overflow-auto ">
       <div className="mt-6">
         {test.map((item, index) => {
           return (

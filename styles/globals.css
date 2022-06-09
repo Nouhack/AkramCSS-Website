@@ -1,24 +1,11 @@
-@import "../node_modules/@nouhsa/akramcss/css/akramcss.min.css";
-
+/* purgecss start ignore */
+@import "@docsearch/css";
+/* purgecss end ignore */
+@import "@nouhsa/akramcss/css/akramcss.min.css";
 body {
   padding: 0;
   margin: 0;
 }
-
 .page {
-  height: calc(100vh - 4rem);
+  max-height: calc(100vh - 4rem);
 }
-.specialScroll::-webkit-scrollbar {
-  width: 5px;
-}
-
-.specialScroll::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.specialScroll::-webkit-scrollbar-thumb {
-  background-color: #0688ac;
-  outline: 1px solid slategrey;
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdsb2JhbHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Imdsb2JhbHMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCBcIi4uL25vZGVfbW9kdWxlcy9Abm91aHNhL2FrcmFtY3NzL2Nzcy9ha3JhbWNzcy5taW4uY3NzXCI7XG5cbmJvZHkge1xuICBwYWRkaW5nOiAwO1xuICBtYXJnaW46IDA7XG59XG5cbi5wYWdlIHtcbiAgaGVpZ2h0OiBjYWxjKDEwMHZoIC0gNHJlbSk7XG59XG4uc3BlY2lhbFNjcm9sbDo6LXdlYmtpdC1zY3JvbGxiYXIge1xuICB3aWR0aDogNXB4O1xufVxuXG4uc3BlY2lhbFNjcm9sbDo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2sge1xuICBib3gtc2hhZG93OiBpbnNldCAwIDAgNnB4IHJnYmEoMCwgMCwgMCwgMC4zKTtcbn1cblxuLnNwZWNpYWxTY3JvbGw6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzA2ODhhYztcbiAgb3V0bGluZTogMXB4IHNvbGlkIHNsYXRlZ3JleTtcbn1cbiJdfQ== */

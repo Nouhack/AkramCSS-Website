@@ -3,7 +3,7 @@ import Head from "next/head";
 import Introduction from "../../Components/subComponents/Introduction";
 const Home: NextPage = () => {
   return (
-    <div className="w-100-100 page px-5 overflowY-auto">
+    <div className="w-100-100 h-full page px-1 md:px-5 overflowY-auto">
       <Head>
         <title>Introduction - AkramCSS</title>
         <meta

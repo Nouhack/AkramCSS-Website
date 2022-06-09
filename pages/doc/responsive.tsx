@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { CopyBlock, dracula } from "react-code-blocks";
 import Introduction from "../../Components/subComponents/Introduction";
-
+import ResponsivePage from "../../pages-data/responsive";
 type Props = {};
 
 export default function Responsive({}: Props) {
@@ -58,27 +57,7 @@ export default function Responsive({}: Props) {
           </div>
         </div>
 
-        <Introduction
-          title="Usage"
-          description="AkramCSS allows you to set the desired style on any screen using the breakpoint prefixes."
-        />
-        <p className="font-bold whitespace-pre-line">{`{ ' ' | md | lg | xl} : { any utility class ex : bg-akram | opacity-50 | w-100-100 | .... }`}</p>
-        <CopyBlock
-          text={`<div className="display-flex flex-row">
-        <div className="bg-sissa-200 md:bg-sissa xl:rounded-lg p-1 ">
-                  <p className="text-md font-medium">I use dark Theme</p>
-        </div>  
-        <div className="bg-sissa-200 lg:rounded-lg p-1 md:text-md dark-mode">
-                  <p className="text-md font-medium">I use dark Theme</p>
-        </div>  
-</div>`}
-          language={"jsx"}
-          theme={dracula}
-          showLineNumbers={false}
-          codeBlock
-          wrapLines
-        />
-
+        <ResponsivePage />
         <div className="bg-sissa p-0.8 my-2 whitespace-pre-line">
           <p className="text-md lh-normal font-medium text-inner opacity-80 ">
             Note that AkramCSS is mobile first , what the hell is mobile first ?
