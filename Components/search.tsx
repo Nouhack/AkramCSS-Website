@@ -1,12 +1,11 @@
 import { DocSearch } from "@docsearch/react";
-import "@docsearch/css";
 
 function App() {
   return (
     <DocSearch
-      appId="YOUR_APP_ID"
-      indexName="YOUR_INDEX_NAME"
-      apiKey="YOUR_SEARCH_API_KEY"
+      appId="S4DPKX78ZX"
+      indexName="akramcss"
+      apiKey="51a2e29b6bd2757794a1bb91e4911a4d"
     />
   );
 }
