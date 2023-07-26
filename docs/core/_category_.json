@@ -1,0 +1,9 @@
+{
+  "label": "Core",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Core concepts",
+    "description": "Welcome to the Core Concepts section of our utility class library documentation. In this section, we will explore the fundamental principles that underpin the functionality and design of our library. Understanding these core concepts will empower you to harness the full potential of our utility classes and create robust, efficient, and scalable solutions for your projects. Let's dive in and explore the building blocks that form the foundation of our library's capabilities."
+  }
+}
