@@ -1,0 +1,157 @@
+---
+sidebar_position: 4
+---
+
+# Customize
+
+In this chapter, we will explore the process of customizing AkramCSS to suit your specific needs. Customization is divided into two main parts:
+
+- Adding New Values: One aspect of customization involves adding new values, such as introducing fresh colors to the existing palette.
+
+- Modifying Existing Values: The other part of customization allows you to modify existing values, such as changing the value of a particular color like the senary color.
+
+It's essential to note that AkramCSS provides customization options for the following properties only:
+
+- Colors
+- Text sizes
+- Font weights
+- Letter spacings
+- Line heights
+- Transition durations
+- Transition delays
+- Blurs
+- Rounded values (border radius)
+
+By focusing on these specific properties, AkramCSS ensures that your customizations are consistent and effectively integrated, allowing you to tailor your styles while maintaining the overall coherence of the library. Let's now dive into the details of how you can achieve these customizations to make AkramCSS uniquely yours.
+
+## Steps
+
+### Install Sass compiler
+
+Since all the work is done via Sass files, the first step is to install the Sass compiler. You have two options to achieve this:
+
+**Option 1 :** Install via npm
+To install the Sass compiler using npm, execute the following command:
+
+```npm
+npm install -g sass
+```
+
+### Add value
+
+After creating a new style.scss file, you can now extend AkramCSS by adding new values to its Sass map variables. Follow this pattern to add a new color named "jdida" to AkramCSS:
+
+```css
+// Import the necessary functions from Sass's map module
+@use "sass:map";
+
+// Import colorVariables file where the colors are stored
+@use "./node_modules/@nouhsa/akramcss/scss/Variables/colorVariables" as *;
+
+// Add the new color "jdida" to the light and dark themes
+$colors: map.deep-merge(
+  $colors,
+  (
+    light: (
+      "jdida": rgb(133, 255, 133)
+    ),
+    dark: (
+      "jdida": green
+    )
+  )
+);
+
+// Add the new color "jdida" to the colorPalette map
+$colorPalette: map.merge(
+  $colorPalette,
+  (
+    "jdida": var(--jdida)
+  )
+);
+
+// Import all utility classes from AkramCSS
+@use "./node_modules/@nouhsa/akramcss/scss/all";
+```
+
+### Modify value
+
+In AkramCSS, you have the flexibility to modify existing values, such as changing the "senary-light" color. Follow this pattern to achieve the desired modification:
+
+```css
+// Import the required functions from Sass's map module
+@use "sass:map";
+
+// Modify the value of $senary-light color
+@use "./node_modules/@nouhsa/akramcss/scss/Variables/colorVariables" with (
+  $senary-light: black
+);
+
+// Import all utility classes from AkramCSS
+@use "./node_modules/@nouhsa/akramcss/scss/all";
+```
+
+Here's how it works:
+
+- Import the necessary functions from Sass's map module using @use "sass:map";.
+- Modify the value of the $senary-light color variable from AkramCSS by using the @use directive with the with clause. Set the new value you desire, in this case, we set it to black.
+- After making the modification, import all the utility classes from AkramCSS using @use "./node_modules/@nouhsa/akramcss/scss/all";.
+
+By following this pattern, you can easily customize AkramCSS variables to match your preferred color scheme or any other values, allowing you to tailor AkramCSS to suit your project's unique requirements. Happy customizing!
+
+### Note
+
+To identify the variable you wish to modify in AkramCSS, follow these steps:
+
+- Navigate to the `scss/Variables` directory in AkramCSS.
+- Open the relevant file that contains the variable you want to modify.
+
+For example, if you want to change the `senary-light` color, locate the file `scss/Variables/_colorVariables.scss` directory that deals with color-related variables. <br/> The variable is defined as follows:
+
+```css
+// _colorVariables.scss
+
+$senary-light: #RRGGBB; // Replace #RRGGBB with the existing HEX code of the color you want to modify
+```
+
+After locating the appropriate variable, you can use the pattern mentioned earlier to modify it. The pattern allows you to customize the value according to your preferences:
+
+```css
+@use "sass:map";
+
+// Modify a value, for example: $senary-light color
+@use "./node_modules/@nouhsa/akramcss/scss/Variables/colorVariables" with (
+  $senary-light: black; // Replace 'black' with the new color value you want to set
+);
+
+@use "./node_modules/@nouhsa/akramcss/scss/all";
+
+```
+
+By referring to the `scss/variables` directory and pinpointing the relevant variable, you can easily modify the values in AkramCSS to align with your project's specific design choices. Enjoy the freedom to customize and enhance your styles with AkramCSS!
+
+### Compiling
+
+The final step is to compile the `style.scss` file into its corresponding CSS file. To accomplish this, you can use the following command in your terminal or command prompt:
+
+```bash
+sass style.scss style.css
+```
+
+After making all the necessary modifications to your **style.scss** file and compiling it to generate the style.css file, don't forget to link the style.css file to your HTML file. This step is crucial to apply the customized styles to your web page.
+
+In your HTML file, add the following link tag within the head section:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Other meta tags, title, and other head elements -->
+
+    <!-- Link to your custom style.css -->
+    <link rel="stylesheet" href="path/to/style.css" />
+  </head>
+  <body>
+    <!-- Your webpage content goes here -->
+  </body>
+</html>
+```
