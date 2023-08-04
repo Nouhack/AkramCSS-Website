@@ -1,0 +1,749 @@
+---
+sidebar_position: 1
+---
+
+# Layout
+
+## Aspect ratio
+
+Enhance your web layout with the `aspect-ratio` CSS property! By defining a preferred aspect ratio for your box, this powerful feature facilitates seamless auto-sizing and layout functions. Unlock new possibilities for responsive design and achieve optimal visual balance effortlessly.
+
+<div className='table_container'>
+| `Classes    ` | `Properties         ` |
+| ------------- | --------------------- |
+| aspect-auto   | aspect-ratio : auto;  |
+| aspect-auto   | aspect-ratio : 1;     |
+| aspect-auto   | aspect-ratio : 16/9;  |
+| aspect-0      | aspect-ratio : 1/2;   |
+
+</div>
+**Usage :**
+
+To leverage the Aspect Ratio utility classes, adhere to the following pattern:
+
+{ aspect }-{ auto | square | 16 | 0 }
+
+Example:
+
+```jsx
+<div class="bg-akram w-100-100">
+<img class="aspect-auto" />
+<img class="aspect-square" />
+<img class="aspect-16" />
+<img class="aspect-0" />
+</div>
+```
+
+By employing these classes, you can easily control the aspect ratio of elements within the container, achieving responsive and visually appealing designs.
+
+## Box decoration break
+
+`Box-decoration-break` CSS property controls how an element's fragments display when broken across lines or columns.
+
+<div className='table_container'>
+
+| `Classes   ` | `Properties                  ` |
+| ------------ | ------------------------------ |
+| boxD-clone   | box-decoration-break : clone;  |
+| boxD-slice   | box-decoration-break : slice;  |
+
+</div>
+**Usage :**
+
+Box decoration break utility classes follow this pattern:
+{boxD}-{clone|slice}
+
+Example:
+
+```jsx
+<div class="bg-maria display-flex flex-row">
+<p class="boxD-clone">i love <br>Akramcss</p>
+<p class="boxD-slice">i love <br>Akramcss</p>
+</div>
+```
+
+## Display
+
+The `display ` CSS property controls an element's type (block or inline) and its children's layout, like flow, grid, or flex. It defines inner and outer display types. Specific display values have their own specifications, like display: flex in the CSS Flexible Box Model.
+
+<div className='table_container'>
+
+| `Classes                   ` | `Properties                    ` |
+| ---------------------------- | -------------------------------- |
+| display-block                | display : block ;                |
+| display-inline-block         | display : inline-block ;         |
+| display-inline               | display : inline ;               |
+| display-flex                 | display : flex ;                 |
+| display-inline-flex          | display : inline-flex ;          |
+| display-table                | display : table ;                |
+| display-inline-table         | display : inline-table ;         |
+| display-table-caption        | display : table-caption ;        |
+| display-table-cell           | display : table-cell ;           |
+| display-table-column         | display : table-column ;         |
+| display-table-column-group   | display : table-column-group ;   |
+| display-table-footer-group   | display : table-footer-group ;   |
+| display-table-row            | display : table-row ;            |
+| display-table-root           | display : table-root ;           |
+| display-grid                 | display : grid ;                 |
+| display-inline-grid          | display : inline-grid            |
+| display-contents             | display : contents ;             |
+| display-list-item            | display : list-item              |
+| display-none                 | display : none ;                 |
+
+</div>
+**Usage :**
+
+To use Display utility classes, follow this pattern:
+
+{display}-{block|inline-block|inline|flex|inline-flex|table|inline-table|table-caption|table-cell|table-column|table-column-group|table-footer-group|table-row|table-root|grid|inline-grid|contents|list-item|none}
+
+Example:
+
+```jsx
+<div class="bg-maria display-flex flex-row">
+<div class="display-flex">FIRST</div>
+<div class="display-grid">SECOND</div>
+<div class="display-table">THIRD</div>
+</div>
+```
+
+## Float
+
+The `float ` CSS property positions an element on the left or right side of its container, enabling text and inline elements to wrap around it. This takes the element out of the normal flow of the page, while still being a part of the flow (unlike absolute positioning).
+
+
+<div className='table_container'>
+
+| `Classes    ` | `Properties     ` |
+| ------------- | ----------------- |
+| float-left    | float : left ;    |
+| float-right   | float : right ;   |
+| float-none    | float : none ;    |
+
+</div>
+**Usage :**
+
+To utilize Float utility classes, follow this pattern:
+
+{float}-{left|right|none}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="">
+<img class="float-left" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+<div class="transition-color duration-slow ease-in-out delay-fase">
+<img class="float-right" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+<div class="transition-shadow duration-default etep-end delay-fase">
+<img class="float-none" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+</div>
+```
+
+## Clear
+
+The `clear ` CSS property determines whether an element should be positioned below (cleared) floating elements that come before it. This property applies to both floating and non-floating elements.
+
+
+<div className='table_container'>
+
+| `Classes    ` | `Properties     ` |
+| ------------- | ----------------- |
+| clear-left    | clear : left ;    |
+| clear-right   | clear : right ;   |
+| clear-both    | clear : both ;    |
+| clear-none    | clear : none ;    |
+
+</div>
+**Usage :**
+
+To utilize Clear utility classes, follow this pattern:
+
+{clear}-{left|right|both|none}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="">
+<img class="clear-right" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+<div class="transition-color duration-slow ease-in-out delay-fase">
+<img class="clear-right" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+<div class="transition-shadow duration-default etep-end delay-fase">
+<img class="clear-none" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+<div class="transition-shadow duration-default etep-end delay-fase">
+<img class="clear-both" src="/static/images/akram.png" />
+<p class="text-akram">AkramCSS</p>
+</div>
+</div>
+```
+
+## Object fit
+
+The `object-fit` CSS property determines how the content of a replaced element, like an `<img>` or `<video>`, should be resized to fit its container. Additionally, the object-position property allows you to adjust the alignment of the replaced element's content object within its box.
+
+
+<div className='table_container'>
+
+| `Classes           ` | `Properties               ` |
+| -------------------- | --------------------------- |
+| objectF-fill         | object-fit : fill ;         |
+| objectF-contain      | object-fit : contain ;      |
+| objectF-cover        | object-fit : cover ;        |
+| objectF-none         | object-fit : none ;         |
+| objectF-scale-down   | object-fit : scale-down ;   |
+
+</div>
+**Usage :**
+
+To utilize Object Fit utility classes, follow this pattern:
+
+{objectF}-{fill|contain|cover|none|scale-down}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="">
+<img class="objectF-fill" src="/static/images/akram.png" />
+<img class="objectF-contain" src="/static/images/akram.png" />
+<img class="objectF-cover" src="/static/images/akram.png" />
+<img class="objectF-none" src="/static/images/akram.png" />
+<img class="objectF-scale-down" src="/static/images/akram.png" />
+</div>
+</div>
+```
+
+## Object position
+
+The `object-position` CSS property defines the alignment of the selected replaced element's content within its box. If the replaced element's object doesn't fully cover the box, the element's background will be visible in the uncovered areas. Moreover, you can control how the replaced element's object's original size is adjusted to fit the box by using the object-fit property.
+
+
+<div className='table_container'>
+
+| Classes              | Properties                       |
+| -------------------- | -------------------------------- |
+| objectP-center       | object-position : center ;       |
+| objectP-top          | object-position : top ;          |
+| objectP-bottom       | object-position : bottom ;       |
+| objectP-left         | object-position : left ;         |
+| objectP-right        | object-position : right ;        |
+| objectP-left-bottom  | object-position : left bottom ;  |
+| objectP-left-top     | object-position : left top ;     |
+| objectP-right-bottom | object-position : right bottom ; |
+| objectP-right-top    | object-position : right top ;    |
+
+</div>
+**Usage :**
+
+To utilize Object Position utility classes, follow this pattern:
+
+{objectP}-{bottom|center|left|right|top|left-bottom|left-top|right-bottom|right-top}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="">
+<img class="objectF-none objectP-center" src="/static/images/akram.png" />
+<img class="objectF-none objectP-right" src="/static/images/akram.png" />
+<img
+class="objectF-none objectP-left-bottom"
+src="/static/images/akram.png"
+/>
+<img class="objectF-none objectP-left" src="/static/images/akram.png" />
+<img
+class="objectF-none objectP-right-bottom"
+src="/static/images/akram.png"
+/>
+</div>
+</div>
+```
+
+## Overflow
+
+The `overflow ` CSS shorthand property controls the behavior of an element's content when it exceeds the space available in its block formatting context, in both horizontal and vertical directions.
+
+
+<div className='table_container'>
+
+| `Classes         ` | `Properties          ` |
+| ------------------ | ---------------------- |
+| overflow-auto      | overflow : auto ;      |
+| overflow-hidden    | overflow : hidden ;    |
+| overflow-scroll    | overflow : scroll ;    |
+| overflow-visible   | overflow : visible ;   |
+
+</div>
+**Usage :**
+
+To utilize Overflow utility classes, follow this pattern:
+
+{overflow}-{auto|hidden|visible|scroll}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="overflow-auto"></div>
+<div class="overflow-hidden"></div>
+<div class="overflow-visible"></div>
+<div class="overflow-scroll"></div>
+</div>
+```
+
+## Horizontal overflow
+
+The `overflow-x` CSS property controls what appears when content overflows a block-level element's left and right edges. It can display nothing, a scroll bar, or the overflowing content.
+
+
+<div className='table_container'>
+
+| `Classes          ` | `Properties            ` |
+| ------------------- | ------------------------ |
+| overflowX-auto      | overflow-x : auto ;      |
+| overflowX-hidden    | overflow-x : hidden ;    |
+| overflowX-scroll    | overflow-x : scroll ;    |
+| overflowX-visible   | overflow-x : visible ;   |
+
+</div>
+**Usage :**
+
+To use Horizontal Overflow utility classes, follow this pattern:
+
+{overflowX}-{auto|hidden|visible|scroll}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="overflowX-auto"></div>
+<div class="overflowX-hidden"></div>
+<div class="overflowX-visible"></div>
+<div class="overflowX-scroll"></div>
+</div>
+```
+
+## Vertical overflow
+
+The `overflow-y` CSS property controls what appears when content overflows a block-level element's top and bottom edges. It can display nothing, a scroll bar, or the overflowing content.
+
+
+<div className='table_container'>
+
+| `Classes          ` | `Properties            ` |
+| ------------------- | ------------------------ |
+| overflowY-auto      | overflow-y : auto ;      |
+| overflowY-hidden    | overflow-y : hidden ;    |
+| overflowY-scroll    | overflow-y : scroll ;    |
+| overflowY-visible   | overflow-y : visible ;   |
+
+</div>
+**Usage :**
+
+To use Vertical Overflow utility classes, follow this pattern:
+
+{overflowY}-{auto|hidden|visible|scroll}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="overflowY-auto"></div>
+<div class="overflowY-hidden"></div>
+<div class="overflowY-visible"></div>
+<div class="overflowY-scroll"></div>
+</div>
+```
+
+## Over scroll behavior
+
+The `overscroll-behavior` CSS property controls a browser's behavior when reaching the boundary of a scrolling area. It combines overscroll-behavior-x and overscroll-behavior-y into a shorthand.
+
+
+<div className='table_container'>
+
+| `Classes           ` | `Properties                   ` |
+| -------------------- | ------------------------------- |
+| overscroll-auto      | overflow-behavior : auto ;      |
+| overscroll-contain   | overflow-behavior : contain ;   |
+| overscroll-none      | overflow-behavior : none ;      |
+
+</div>
+**Usage :**
+
+To utilize Overscroll Behavior utility classes, follow this pattern:
+
+{overscroll}-{auto|contain|none}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="overscroll-auto"></div>
+<div class="overscroll-contain"></div>
+<div class="overscroll-none"></div>
+</div>
+```
+
+## Horizontal over scroll behavior
+
+The `overscroll-behavior-x` CSS property controls the browser's behavior when the horizontal boundary of a scrolling area is reached.
+
+
+<div className='table_container'>
+
+| `Classes            ` | `Properties                       ` |
+| --------------------- | ----------------------------------- |
+| overscrollX-auto      | overscroll-behavior-x : auto ;      |
+| overscrollX-contain   | overscroll-behavior-x : contain ;   |
+| overscrollX-none      | overscroll-behavior-x : none ;      |
+</div>
+
+**Usage :**
+
+To utilize Horizontal Overscroll Behavior utility classes, follow this pattern:
+
+{overscrollX}-{auto|contain|none}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="overscrollX-auto"></div>
+<div class="overscrollX-contain"></div>
+<div class="overscrollX-none"></div>
+</div>
+```
+
+## Vertical over scroll behavior
+
+The `overscroll-behavior-y` CSS property controls the browser's behavior when the vertical boundary of a scrolling area is reached.
+
+
+<div className='table_container'>
+
+| `Classes            ` | `Properties                       ` |
+| --------------------- | ----------------------------------- |
+| overscrollY-auto      | overscroll-behavior-y : auto ;      |
+| overscrollY-contain   | overscroll-behavior-y : contain ;   |
+| overscrollY-none      | overscroll-behavior-y : none ;      |
+
+</div>
+**Usage :**
+
+To utilize Vertical Overscroll Behavior utility classes, follow this pattern:
+
+{overscrollY}-{auto|contain|none}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="overscrollY-auto"></div>
+<div class="overscrollY-contain"></div>
+<div class="overscrollY-none"></div>
+</div>
+```
+
+## Position
+
+The `position` CSS property determines how an element is positioned within a document. The top, right, bottom, and left properties specify the final location of the positioned elements.
+
+<div className='table_container'>
+
+| `Classes          ` | `Properties           ` |
+| ------------------- | ----------------------- |
+| position-static     | position : static ;     |
+| position-relative   | position : relative ;   |
+| position-absolute   | position : absolute ;   |
+| position-fixed      | position : fixed ;      |
+| position-sticky     | position : sticky ;     |
+
+</div>
+**Usage :**
+
+To utilize Position utility classes, follow this pattern:
+
+{position}-{absolute|fixed|relative|static|sticky}
+
+Example:
+
+```jsx
+<div class="bg-primary">
+<div class="position-absolute"></div>
+<div class="position-fixed"></div>
+<div class="position-relative"></div>
+<div class="position-static"></div>
+<div class="position-sticky"></div>
+</div>
+```
+
+## Top
+
+The `top` CSS property determines the vertical position of a positioned element. It has no effect on non-positioned elements.
+
+<div className='table_container'>
+
+| `Classes` | `Properties      ` |
+| --------- | ------------------ |
+| top-0     | top : 0rem ;       |
+| top-0.1   | top : 0.125rem ;   |
+| top-0.2   | top : 0.25rem ;    |
+| top-0.3   | top : 0.375rem ;   |
+| top-0.5   | top : 0.5rem ;     |
+| top-0.6   | top : 0.625rem ;   |
+| top-0.7   | top : 0.75rem ;    |
+| top-0.8   | top : 0.875rem ;   |
+| top-1     | top : 1rem ;       |
+| top-1.2   | top : 1.125rem ;   |
+| top-1.4   | top : 1.25rem ;    |
+| top-1.5   | top : 1.5rem ;     |
+| top-1.7   | top : 1.75rem ;    |
+| top-2     | top : 2rem ;       |
+| top-2.2   | top : 2.25rem ;    |
+| top-2.5   | top : 2.5rem ;     |
+| top-2.7   | top : 2.75rem ;    |
+| top-3     | top : 3rem ;       |
+| top-3.5   | top : 3.5rem ;     |
+| top-4     | top : 4rem ;       |
+| top-5     | top : 5rem ;       |
+| top-6     | top : 6rem ;       |
+| top-7     | top : 7rem ;       |
+| top-8     | top : 8rem ;       |
+| top-9     | top : 9rem ;       |
+| top-10    | top : 10rem ;      |
+| top-11    | top : 11rem ;      |
+| top-12    | top : 12rem ;      |
+| top-13    | top : 13rem ;      |
+| top-14    | top : 14rem ;      |
+| top-15    | top : 15rem ;      |
+| top-16    | top : 16rem ;      |
+| top-18    | top : 18rem ;      |
+| top-20    | top : 20rem ;      |
+| top-22    | top : 22rem ;      |
+| top-24    | top : 24rem ;      |
+
+</div>
+**Usage :**
+
+To utilize Top utility classes, follow this pattern:
+
+{top}-{remsizes}
+
+Example:
+
+```jsx
+<div class="bg-primary position-relative">
+<div class="position-absolute top-1"></div>
+<div class="position-absolute top-2"></div>
+<div class="position-absolute top-3"></div>
+<div class="position-absolute top-6"></div>
+<div class="position-absolute top-10"></div>
+</div>
+```
+
+## Right
+
+The CSS property known as `right` plays a crucial role in determining the horizontal position of a positioned element. However, it remains ineffective when applied to non-positioned elements.
+
+<div className='table_container'>
+
+| `Classes` | `Properties      ` |
+| --------- | ------------------ |
+| right-0   | top : 0rem ;       |
+| right-0.1 | top : 0.125rem ;   |
+| right-0.2 | top : 0.25rem ;    |
+| right-0.3 | top : 0.375rem ;   |
+| right-0.5 | top : 0.5rem ;     |
+| right-0.6 | top : 0.625rem ;   |
+| right-0.7 | top : 0.75rem ;    |
+| right-0.8 | top : 0.875rem ;   |
+| right-1   | top : 1rem ;       |
+| right-1.2 | top : 1.125rem ;   |
+| right-1.4 | top : 1.25rem ;    |
+| right-1.5 | top : 1.5rem ;     |
+| right-1.7 | top : 1.75rem ;    |
+| right-2   | top : 2rem ;       |
+| right-2.2 | top : 2.25rem ;    |
+| right-2.5 | top : 2.5rem ;     |
+| right-2.7 | top : 2.75rem ;    |
+| right-3   | top : 3rem ;       |
+| right-3.5 | top : 3.5rem ;     |
+| right-4   | top : 4rem ;       |
+| right-5   | top : 5rem ;       |
+| right-6   | top : 6rem ;       |
+| right-7   | top : 7rem ;       |
+| right-8   | top : 8rem ;       |
+| right-9   | top : 9rem ;       |
+| right-10  | top : 10rem ;      |
+| right-11  | top : 11rem ;      |
+| right-12  | top : 12rem ;      |
+| right-13  | top : 13rem ;      |
+| right-14  | top : 14rem ;      |
+| right-15  | top : 15rem ;      |
+| right-16  | top : 16rem ;      |
+| right-18  | top : 18rem ;      |
+| right-20  | top : 20rem ;      |
+| right-22  | top : 22rem ;      |
+| right-24  | top : 24rem ;      |
+
+</div>
+**Usage :**
+
+To utilize Right utility classes, follow this pattern:
+
+{right}-{remsizes}
+
+Example:
+
+```jsx
+<div class="bg-primary position-relative">
+<div class="position-absolute right-1"></div>
+<div class="position-absolute right-2"></div>
+<div class="position-absolute right-3"></div>
+<div class="position-absolute right-6"></div>
+<div class="position-absolute right-10"></div>
+</div>
+```
+
+## Left
+
+The `left` CSS property plays a fundamental role in defining the horizontal position of a positioned element. However, it remains ineffectual when applied to non-positioned elements.
+
+<div className='table_container'>
+
+| `Classes` | `Properties      ` |
+| --------- | ------------------ |
+| left-0    | left : 0rem ;      |
+| left-0.1  | left : 0.125rem ;  |
+| left-0.2  | left : 0.25rem ;   |
+| left-0.3  | left : 0.375rem ;  |
+| left-0.5  | left : 0.5rem ;    |
+| left-0.6  | left : 0.625rem ;  |
+| left-0.7  | left : 0.75rem ;   |
+| left-0.8  | left : 0.875rem ;  |
+| left-1    | left : 1rem ;      |
+| left-1.2  | left : 1.125rem ;  |
+| left-1.4  | left : 1.25rem ;   |
+| left-1.5  | left : 1.5rem ;    |
+| left-1.7  | left : 1.75rem ;   |
+| left-2    | left : 2rem ;      |
+| left-2.2  | left : 2.25rem ;   |
+| left-2.5  | left : 2.5rem ;    |
+| left-2.7  | left : 2.75rem ;   |
+| left-3    | left : 3rem ;      |
+| left-3.5  | left : 3.5rem ;    |
+| left-4    | left : 4rem ;      |
+| left-5    | left : 5rem ;      |
+| left-6    | left : 6rem ;      |
+| left-7    | left : 7rem ;      |
+| left-8    | left : 8rem ;      |
+| left-9    | left : 9rem ;      |
+| left-10   | left : 10rem ;     |
+| left-11   | left : 11rem ;     |
+| left-12   | left : 12rem ;     |
+| left-13   | left : 13rem ;     |
+| left-14   | left : 14rem ;     |
+| left-15   | left : 15rem ;     |
+| left-16   | left : 16rem ;     |
+| left-18   | left : 18rem ;     |
+| left-20   | left : 20rem ;     |
+| left-22   | left : 22rem ;     |
+| left-24   | left : 24rem ;     |
+
+</div>
+**Usage :**
+
+To utilize Left utility classes, follow this pattern:
+
+{left}-{remsizes}
+
+Example:
+
+```jsx
+<div class="bg-primary position-relative">
+<div class="position-absolute left-1"></div>
+<div class="position-absolute left-2"></div>
+<div class="position-absolute left-3"></div>
+<div class="position-absolute left-6"></div>
+<div class="position-absolute left-10"></div>
+</div>
+```
+
+## Bottom
+
+The `bottom` CSS property is instrumental in determining the vertical position of a positioned element. Nevertheless, it holds no influence over non-positioned elements.
+
+
+<div className='table_container'>
+
+| `Classes`  | `Properties      `  |
+| ---------- | ------------------- |
+| bottom-0   | bottom : 0rem ;     |
+| bottom-0.1 | bottom : 0.125rem ; |
+| bottom-0.2 | bottom : 0.25rem ;  |
+| bottom-0.3 | bottom : 0.375rem ; |
+| bottom-0.5 | bottom : 0.5rem ;   |
+| bottom-0.6 | bottom : 0.625rem ; |
+| bottom-0.7 | bottom : 0.75rem ;  |
+| bottom-0.8 | bottom : 0.875rem ; |
+| bottom-1   | bottom : 1rem ;     |
+| bottom-1.2 | bottom : 1.125rem ; |
+| bottom-1.4 | bottom : 1.25rem ;  |
+| bottom-1.5 | bottom : 1.5rem ;   |
+| bottom-1.7 | bottom : 1.75rem ;  |
+| bottom-2   | bottom : 2rem ;     |
+| bottom-2.2 | bottom : 2.25rem ;  |
+| bottom-2.5 | bottom : 2.5rem ;   |
+| bottom-2.7 | bottom : 2.75rem ;  |
+| bottom-3   | bottom : 3rem ;     |
+| bottom-3.5 | bottom : 3.5rem ;   |
+| bottom-4   | bottom : 4rem ;     |
+| bottom-5   | bottom : 5rem ;     |
+| bottom-6   | bottom : 6rem ;     |
+| bottom-7   | bottom : 7rem ;     |
+| bottom-8   | bottom : 8rem ;     |
+| bottom-9   | bottom : 9rem ;     |
+| bottom-10  | bottom : 10rem ;    |
+| bottom-11  | bottom : 11rem ;    |
+| bottom-12  | bottom : 12rem ;    |
+| bottom-13  | bottom : 13rem ;    |
+| bottom-14  | bottom : 14rem ;    |
+| bottom-15  | bottom : 15rem ;    |
+| bottom-16  | bottom : 16rem ;    |
+| bottom-18  | bottom : 18rem ;    |
+| bottom-20  | bottom : 20rem ;    |
+| bottom-22  | bottom : 22rem ;    |
+| bottom-24  | bottom : 24rem ;    |
+</div>
+
+**Usage :**
+
+To utilize Bottom utility classes, follow this pattern:
+
+{bottom}-{remsizes}
+
+Example:
+
+```jsx
+<div class="bg-primary position-relative">
+<div class="position-absolute bottom-1"></div>
+<div class="position-absolute bottom-2"></div>
+<div class="position-absolute bottom-3"></div>
+<div class="position-absolute bottom-6"></div>
+<div class="position-absolute bottom-10"></div>
+</div>
+```

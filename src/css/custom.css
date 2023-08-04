@@ -30,3 +30,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+table {
+    width: 100%;
+    display:inline-table;
+}
+.table_container{
+    height:400px;
+    overflow-y: auto;
+}
