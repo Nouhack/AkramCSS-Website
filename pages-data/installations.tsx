@@ -24,7 +24,7 @@ export default function installations({}: Props) {
       <title> Bulma Example</title>
       
       <!--Akram CSS CDN-->
-      <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@nouhsa/akramcss@1.0.39/css/akramcss.min.css">
+      <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@nouhsa/akramcss/css/akramcss.min.css">
       
    </head>
    
