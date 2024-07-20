@@ -48,7 +48,7 @@ export default function backgrounds({}: Props) {
         mainTitle="Background color"
         mainDescription="The background-color CSS property sets the background color of an element."
         items={backgroundColor}
-        usage={`{ bg }-{ base | inner | sissa | akram | maria | senary}`}
+        usage={`{ bg }-{ base | inner | primary | secondary | success | info | warning | danger |sissa | akram | maria }`}
         code={`<div class="bg-primary">
         <div class="bg-sissa">ONE</div>
         <div class="bg-akram">TWO</div>
@@ -124,11 +124,11 @@ export default function backgrounds({}: Props) {
         mainTitle="From Gradient color"
         mainDescription="From is the first color of the gradient. It is the color of the gradient at the starting point."
         items={fromGradient}
-        usage={`{ from }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ from }-{ base | inner | primary | secondary | success | info | warning | danger |sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="gradient-to-right from-sissa">One</div>
         <div class="gradient-to-top from-akram">TWO</div>
-        <div class="gradient-to-top-right from-senary">THREE</div>
+        <div class="gradient-to-top-right from-primary">THREE</div>
 </div>`}
       />
       <UtilityDoc
@@ -136,11 +136,11 @@ export default function backgrounds({}: Props) {
         mainTitle="To Gradient color"
         mainDescription="To is the second color of the gradient. It is the color of the gradient at the ending point."
         items={toGradient}
-        usage={`{ to }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ to }-{ base | inner | primary | secondary | success | info | warning | danger |sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="gradient-right from-sissa to-akram">One</div>
-        <div class="gradient-to-top from-akram to-senary">TWO</div>
-        <div class="gradient-to-top-right from-senary to-sissa">THREE</div>
+        <div class="gradient-to-top from-akram to-warning">TWO</div>
+        <div class="gradient-to-top-right from-info to-sissa">THREE</div>
 </div>`}
       />
     </>

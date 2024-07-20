@@ -253,7 +253,7 @@ export default function borders({}: Props) {
         mainTitle="Border color"
         mainDescription="The border-color shorthand CSS property sets the color of an element's border."
         items={borderColor}
-        usage={`{ border }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-base">One</div>
         <div class="border-inner">TWO</div>
@@ -266,7 +266,7 @@ export default function borders({}: Props) {
         mainTitle="Border top color"
         mainDescription="The border-top-color CSS property sets the color of an element's top border. It can also be set with the shorthand CSS properties border-color or border-top."
         items={borderTopColor}
-        usage={`{ border-t }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border-t }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-t-base">One</div>
         <div class="border-t-inner">TWO</div>
@@ -278,7 +278,7 @@ export default function borders({}: Props) {
         mainTitle="Border bottom color"
         mainDescription="The border-bottom-color CSS property sets the color of an element's bottom border. It can also be set with the shorthand CSS properties border-color or border-bottom."
         items={borderBottomColor}
-        usage={`{ border-b }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border-b }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-b-base">One</div>
         <div class="border-b-inner">TWO</div>
@@ -291,7 +291,7 @@ export default function borders({}: Props) {
         mainTitle="Border right color"
         mainDescription="The border-right-color CSS property sets the color of an element's right border. It can also be set with the shorthand CSS properties border-color or border-right."
         items={borderRightColor}
-        usage={`{ border-r }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border-r }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-r-base">One</div>
         <div class="border-r-inner">TWO</div>
@@ -303,7 +303,7 @@ export default function borders({}: Props) {
         mainTitle="Border left color"
         mainDescription="The border-left-color CSS property sets the color of an element's left border. It can also be set with the shorthand CSS properties border-color or border-left."
         items={borderLeftColor}
-        usage={`{ border-l }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border-l }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-l-base">One</div>
         <div class="border-l-inner">TWO</div>
@@ -317,7 +317,7 @@ export default function borders({}: Props) {
         mainTitle="Horizontal border color"
         mainDescription="Horizontal border color sets the color of the left and right border of an element equal."
         items={borderXColor}
-        usage={`{ border-x }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border-x }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-x-base">One</div>
         <div class="border-x-inner">TWO</div>
@@ -330,7 +330,7 @@ export default function borders({}: Props) {
         mainTitle="Vertical border color"
         mainDescription="Vertical border color sets the color of the top and bottom border of an element equal."
         items={borderYColor}
-        usage={`{ border-y }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ border-y }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="border-y-base">One</div>
         <div class="border-y-inner">TWO</div>
@@ -378,11 +378,11 @@ export default function borders({}: Props) {
         mainTitle="Outline color"
         mainDescription="The outline-color CSS property sets the color of an element's outline."
         items={outlineColor}
-        usage={`{ outline }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ outline }-{ base | inner  | primary | secondary | success | info | warning | danger  | sissa | akram | maria }`}
         code={`<div class="bg-maria my-2 w-full">
         <div class="outline-solid outline-2 outline-sissa">One</div>
         <div class="outline-solid outline-2 outline-akram">TWO</div>
-        <div class="outline-solid outline-2 outline-senary">THREE</div>
+        <div class="outline-solid outline-2 outline-primary">THREE</div>
 </div>`}
       />
       <UtilityDoc

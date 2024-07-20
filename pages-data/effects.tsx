@@ -17,11 +17,11 @@ export default function effects({}: Props) {
         mainTitle="Shadow box"
         mainDescription="The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color."
         items={shadow}
-        usage={`{ shadow }-{ sm | md | lg | xl | 2xl | 3xl }-{ base | inner | sissa | akram | maria | senary}`}
+        usage={`{ shadow }-{ sm | md | lg | xl | 2xl | 3xl }-{ base | inner | primary | secondary | success | info | warning | danger | sissa | akram | maria }`}
         code={`<div class="bg-akram w-100-100">
             <div class="shadow-sm-sissa"></div>
             <div class="shadow-lg-maria"></div>
-            <div class="shadow-3xl-senary"></div>
+            <div class="shadow-3xl-primary"></div>
 </div>`}
       />
       <UtilityDoc

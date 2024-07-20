@@ -244,10 +244,15 @@ var textColors = [{ util: "text", prop: "color" }];
 var textColorsVariableList = [
   { util: "base", prop: "var(--base)" },
   { util: "inner", prop: "var(--inner)" },
+  { util: "primary", prop: "var(--primary)" },
+  { util: "secondary", prop: "var(--secondary)" },
+  { util: "success", prop: "var(--success)" },
+  { util: "info", prop: "var(--info)" },
+  { util: "warning", prop: "var(--warning)" },
+  { util: "danger", prop: "var(--danger)" },
   { util: "sissa", prop: "var(--sissa)" },
   { util: "akram", prop: "var(--akram)" },
   { util: "maria", prop: "var(--maria)" },
-  { util: "senary", prop: "var(--senary)" },
 ];
 
 var textDecorations = [{ util: "text", prop: "text-decoration" }];
@@ -264,10 +269,15 @@ var textDecorationColors = [
 var textDecorationColorsVariableList = [
   { util: "base", prop: "var(--base)" },
   { util: "inner", prop: "var(--inner)" },
+  { util: "primary", prop: "var(--primary)" },
+  { util: "secondary", prop: "var(--secondary)" },
+  { util: "success", prop: "var(--success)" },
+  { util: "info", prop: "var(--info)" },
+  { util: "warning", prop: "var(--warning)" },
+  { util: "danger", prop: "var(--danger)" },
   { util: "sissa", prop: "var(--sissa)" },
   { util: "akram", prop: "var(--akram)" },
   { util: "maria", prop: "var(--maria)" },
-  { util: "senary", prop: "var(--senary)" },
 ];
 
 var decorationStyles = [{ util: "decoration", prop: "text-decoration-style" }];

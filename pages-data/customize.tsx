@@ -82,15 +82,15 @@ $colorPalette: map.merge(
       <Introduction
         id="modifyvalue"
         title="Modify AkramCSS value"
-        description="You can also modify a value in AkramCSS , for example if you want to change the senary color value , you can do it by following this pattern :"
+        description="You can also modify a value in AkramCSS , for example if you want to change the primary color value , you can do it by following this pattern :"
       />
 
       <CopyBlock
         text={`
 @use "sass:map";
-//modify a value ex: $senary-light color
+//modify a value ex: $primary-light color
 @use "./node_modules/@nouhsa/akramcss/scss/Variables/colorVariables" with (
-  $senary-light: black
+  $primary-light: black
 );
 @use "./node_modules/@nouhsa/akramcss/scss/all";
             `}
@@ -100,21 +100,21 @@ $colorPalette: map.merge(
         codeBlock
         wrapLines
       />
-      <p className="bg-senary font-semibold p-1">
+      <p className="bg-primaryfont-semibold p-1">
         To get the name of variable you wanna modify please take a look at
         scss/variables
       </p>
       <Introduction
         id="important"
         title="Important"
-        description="If you wanna add and modify values in the same style.scss file please make sure to start by modifying then you can add , ex : adding jdida new color and modifying senary value color for light mode :"
+        description="If you wanna add and modify values in the same style.scss file please make sure to start by modifying then you can add , ex : adding jdida new color and modifying primary value color for light mode :"
       />
       <CopyBlock
         text={`
 @use "sass:map";
-//modify a value ex: $senary-light color
+//modify a value ex: $primary-light color
 @use "./node_modules/@nouhsa/akramcss/scss/Variables/colorVariables" with (
-  $senary-light: black
+  $primary-light: black
 );
 // add a value to colors and color palette map
 @use "./node_modules/@nouhsa/akramcss/scss/Variables/colorVariables" as *;
@@ -145,7 +145,7 @@ $colorPalette: map.merge(
         codeBlock
         wrapLines
       />
-      <p className="font-semibold bg-senary p-1">
+      <p className="font-semibold bg-primary p-1">
         {" "}
         because if you add value before altering another in the same variable
         file you&apos;ll get an error when compiling in scss{" "}
@@ -163,7 +163,7 @@ $colorPalette: map.merge(
         codeBlock
         wrapLines
       />
-      <p className="font-semibold bg-senary p-1">
+      <p className="font-semibold bg-primary p-1">
         Dont forget to link the style.css to your html file
       </p>
       <Introduction

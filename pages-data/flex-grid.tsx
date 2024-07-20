@@ -56,7 +56,7 @@ export default function flexgrid({}: Props) {
         usage={`{ flex }-{ row | row-reverse | column | column-reverse }`}
         code={`<div class="bg-maria display-flex flex-row">
             <div class="bg-akram h-10">i love <br>Akramcss</div>
-            <div class="bg-senary h-10">i love <br>Akramcss</div>
+            <div class="bg-primary h-10">i love <br>Akramcss</div>
 </div>`}
       />
 
@@ -132,7 +132,7 @@ export default function flexgrid({}: Props) {
             <div class="bg-akram"></div>
             <div class="bg-sissa"></div>
             <div class="bg-maria"></div>
-            <div class="bg-senary"></div>
+            <div class="bg-primary"></div>
             <div class="bg-base"></div>
 </div>`}
       />
@@ -186,7 +186,7 @@ export default function flexgrid({}: Props) {
             <div class="bg-akram"></div>
             <div class="bg-sissa"></div>
             <div class="bg-maria"></div>
-            <div class="bg-senary"></div>
+            <div class="bg-primary"></div>
             <div class="bg-base"></div>
 </div>`}
       />
@@ -249,7 +249,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid grid-c-2 gap-2 ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -261,7 +261,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid grid-c-2 gap-x-2 ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -273,7 +273,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid grid-c-2 gap-y-2 ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -285,7 +285,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-flex justifyC-center ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -297,7 +297,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid justifyI-center ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -309,7 +309,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid justifyI-center ">
             <div class="text-inner justifyS-start">FIRST</div>
             <div class="bg-akram justifyS-end">SECOND</div>
-            <div class="bg-senary justifyS-center">THIRD</div>
+            <div class="bg-primary justifyS-center">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -321,7 +321,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid alignC-center ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -333,7 +333,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-flex alignI-center ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -345,7 +345,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-flex">
             <div class="text-inner alignS-start">FIRST</div>
             <div class="bg-akram alignS-end">SECOND</div>
-            <div class="bg-senary alignS-center">THIRD</div>
+            <div class="bg-primary alignS-center">THIRD</div>
 </div>`}
       />
 
@@ -358,7 +358,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid placeC-center ">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -370,7 +370,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid placeI-start">
             <div class="text-inner">FIRST</div>
             <div class="bg-akram">SECOND</div>
-            <div class="bg-senary">THIRD</div>
+            <div class="bg-primary">THIRD</div>
 </div>`}
       />
       <UtilityDoc
@@ -382,7 +382,7 @@ export default function flexgrid({}: Props) {
         code={`<div class="bg-primary display-grid justifyI-center ">
             <div class="text-inner placeS-start">FIRST</div>
             <div class="bg-akram placeS-end">SECOND</div>
-            <div class="bg-senary placeS-center">THIRD</div>
+            <div class="bg-primary placeS-center">THIRD</div>
 </div>`}
       />
     </>

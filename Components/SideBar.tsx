@@ -111,8 +111,8 @@ export default function SideBar({}: Props) {
     },
   ];
   return (
-    <div className="bg-base min-w-16  max-h-full overflow-auto ">
-      <div className="mt-6">
+    <div className="bg-base min-w-16   overflow-auto" style={{scrollbarWidth:"thin",height:'90vh'}}>
+      <div className="mt-0">
         {test.map((item, index) => {
           return (
             <div key={index} className="my-2  px-2">

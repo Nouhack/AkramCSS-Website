@@ -6,7 +6,12 @@ type Props = {};
 
 export default function index({}: Props) {
   return (
-    <div className="w-full h-full gradient-to-right from-base to-akram display-flex alignI-center justifyC-center flex-column">
+    <div 
+            style={{
+                boxSizing: 'border-box',
+            }}
+
+            className="h-full gradient-to-right from-danger to-info display-flex alignI-center justifyC-center flex-column">
       <Head>
         <title>AkramCSS</title>
         <meta
@@ -19,7 +24,7 @@ export default function index({}: Props) {
         Build your website faster and less frustrating with less css touch.
       </p>
       <Link href="/doc">
-        <button className="cursor-pointer bg-akram text-base hover:bg-senary hover:text-base font-bold text-inner p-1.5 transition-color ease duration-slow rounded-lg">
+        <button className="cursor-pointer bg-senary text-base font-bold text-inner p-1.5 transition-color ease duration-slow rounded-lg">
           Getting started
         </button>
       </Link>

@@ -181,14 +181,13 @@ export default function typography({}: Props) {
         mainTitle="Text color"
         mainDescription="The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color."
         items={textColor}
-        usage={`{ text }-{ base | inner | sissa | akram | maria | senary }`}
-        code={`<div class="bg-senary mode-light h-50-100">
+        usage={`{ text }-{ base | inner | primary | secondary | success | info | warning | danger | sissa | akram | maria }`}
+        code={`<div class="bg-primary mode-light h-50-100">
         <p class="text-base">base text color</p>
         <p class="text-inner">inner text color</p>
         <p class="text-sissa">sissa text color</p>
         <p class="text-akram">akram text color</p>
         <p class="text-maria">maria text color</p>
-        <p class="text-senary">senary text color</p>
 </div>`}
       />
 
@@ -211,14 +210,13 @@ export default function typography({}: Props) {
         mainTitle="Text decoration color"
         mainDescription="The text-decoration-color CSS property sets the color of decorations added to text by text-decoration-line."
         items={textDecorationColor}
-        usage={`{ decoration }-{ base | inner | sissa | akram | maria | senary }`}
+        usage={`{ decoration }-{ base | inner | primary | secondary | success | info | warning | danger | sissa | akram | maria }`}
         code={`<div>
         <p class="decoration-base">base color decoration</p>
         <p class="decoration-inner">inner color decoration</p>
         <p class="decoration-sissa-through">sissa color decoration</p>
         <p class="decoration-akram">akram color decoration</p>
         <p class="decoration-akram">akram color decoration</p>
-        <p class="decoration-senary">senary color decoration</p>
 </div>`}
       />
 

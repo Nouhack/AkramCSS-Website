@@ -42,7 +42,7 @@ export default function production({}: Props) {
         codeBlock
         wrapLines
       />
-      <div className="bg-senary p-1 my-2">
+      <div className="bg-primary p-1 my-2">
         <p className="text-md lh-normal font-medium text-base">
           when using any js framework like react js for example all you have to
           edit is the content array where you have to set the final build paths

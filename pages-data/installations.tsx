@@ -80,7 +80,7 @@ export default function installations({}: Props) {
         description="Now you can use AkramCSS in your project (dont forget to import the global style), example :"
       />
       <CopyBlock
-        text={`<div class="bg-senary">
+        text={`<div class="bg-primary">
      <div class="w-90-100 bg-akram font-bold text-base p-2 rounded-lg ls-wider" />
      <div class="w-90-100 bg-akram font-bold text-base p-2 rounded-lg ls-wider" />
 </div>`}

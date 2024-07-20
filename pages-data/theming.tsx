@@ -40,13 +40,28 @@ export default function theming({}: Props) {
           <p className="text-md font-medium bg-base">
             light mode and base background
           </p>
+          <p className="text-md font-medium bg-primary">
+            light mode and primary background
+          </p>
+          <p className="text-md font-medium bg-secondary">
+            light mode and secondary background
+          </p>
+          <p className="text-md font-medium bg-success">
+            light mode and success background
+          </p>
+          <p className="text-md font-medium bg-info">
+            light mode and info background
+          </p>
+          <p className="text-md font-medium bg-warning">
+            light mode and warning background
+          </p>
+          <p className="text-md font-medium bg-danger">
+            light mode and danger background
+          </p>
           <p className="text-md font-medium bg-sissa">
             light mode and sissa background
           </p>
           <p className="text-md font-medium bg-maria">
-            light mode and sissa background
-          </p>
-          <p className="text-md font-medium bg-senary">
             light mode and sissa background
           </p>
         </div>
@@ -55,13 +70,28 @@ export default function theming({}: Props) {
           <p className="text-md font-medium bg-base">
             dark mode and base background
           </p>
+          <p className="text-md font-medium bg-primary">
+            light mode and primary background
+          </p>
+          <p className="text-md font-medium bg-secondary">
+            light mode and secondary background
+          </p>
+          <p className="text-md font-medium bg-success">
+            light mode and success background
+          </p>
+          <p className="text-md font-medium bg-info">
+            light mode and info background
+          </p>
+          <p className="text-md font-medium bg-warning">
+            light mode and warning background
+          </p>
+          <p className="text-md font-medium bg-danger">
+            light mode and danger background
+          </p>
           <p className="text-md font-medium bg-sissa">
             dark mode and sissa background
           </p>
           <p className="text-md font-medium bg-maria">
-            dark mode and sissa background
-          </p>
-          <p className="text-md font-medium bg-senary">
             dark mode and sissa background
           </p>
         </div>

@@ -10,6 +10,7 @@ import {
   monokai,
   shadesOfPurple,
   monokaiSublime,
+    nord
 } from "react-code-blocks";
 
 type Props = {
@@ -47,7 +48,7 @@ export default function UtilityDoc({
       <CopyBlock
         text={code}
         language={"jsx"}
-        theme={dracula}
+        theme={nord}
         showLineNumbers={false}
         codeBlock
         wrapLines
