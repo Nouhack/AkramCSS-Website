@@ -22,7 +22,7 @@ tomorrow,
     a11yLight
 } from "react-code-blocks";
 
-export default function Layout({code:string,Ui:React.Component,title:string}) {
+export default function Layout({code:string,Ui:any,title:string}) {
     const [show_code, setShow_code] = React.useState(false)
   return (
 
