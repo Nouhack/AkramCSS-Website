@@ -60,7 +60,7 @@ theme === "light" ? "light-mode" : theme === "dark" ? "dark-mode" : ""
                     <div
                         // make the header 80 vw and red and center it
 
-                        className={`gradient-to-right from-danger to-info w-80-100 position-fixed top-0 h-4 px-3 z display-flex justifyC-between rounded-xl my-0.5`}
+                        className={`gradient-to-right from-danger to-info w-80-100 position-fixed top-0 h-4 px-3 z display-flex justifyC-between rounded-xl `}
                     >
                         <div className='display-flex gap-2 alignI-center'>
                             <Link href="/">

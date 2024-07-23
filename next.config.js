@@ -3,4 +3,5 @@ module.exports = {
     buildActivity: false,
     swcMinify: false,
   },
+    restrictedMode:false
 };

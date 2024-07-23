@@ -37,17 +37,21 @@ export default function Layout({code,Ui,title}: { code: string; Ui: any; title: 
 
             {
                 show_code ? 
-                    <CopyBlock
-                        text={code}
-                        language={"jsx"}
-                        theme={nord}
-                        showLineNumbers={false}
-                        codeBlock
-                        wrapLines
-                    />
 
-                    : 
-            <div className='h-100-100 display-flex justifyC-center alignI-center mt-2'>
+                            <CopyBlock
+                                style={{
+
+                                }}
+                                text={code}
+                                language={"jsx"}
+                                theme={nord}
+                                showLineNumbers={false}
+                                codeBlock
+                                wrapLines
+                            />
+
+                        : 
+                        <div className='h-100-100 display-flex justifyC-center alignI-center mt-2'>
                         <Ui/>
 
                         </div>
